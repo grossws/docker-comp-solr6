@@ -6,7 +6,7 @@ WORKDIR /opt/solr
 ARG UID=200
 RUN useradd -r --create-home -g nobody -u $UID solr
 
-ARG SOLR_VERSION=6.5.1
+ARG SOLR_VERSION=6.6.3
 ARG SOLR_TGZ_URL=https://www.apache.org/dist/lucene/solr/$SOLR_VERSION/solr-$SOLR_VERSION.tgz
 
 RUN gpg --recv-keys $(curl "https://www.apache.org/dist/lucene/solr/${SOLR_VERSION}/KEYS" | gpg --with-fingerprint --with-colons | grep "^fpr" | cut -d: -f10) \

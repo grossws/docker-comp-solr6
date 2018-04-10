@@ -1,6 +1,6 @@
 # Info
 
-Solr6 basic [Dockerfiles][df] for automated builds on [docker hub][dhub].
+Apache Solr 6.x basic [Dockerfiles][df] for automated builds on [docker hub][dhub].
 
 Based on `grossws/java` image.
 
